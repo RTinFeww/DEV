@@ -1,6 +1,3 @@
-from ast import If
-
-
 print("Chào bạn")
 a = int(input("Nhập a: "))
 if a%2 == 0:
