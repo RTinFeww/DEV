@@ -1,6 +1,6 @@
 print("Chào bạn")
 a = int(input("Nhập a: "))
 if a%2 == 0:
-    print("Chẵn")
+    print(a, "là số chẵn")
 else:
-    print("Lẻ")
+    print(a, "là số lẻ")
