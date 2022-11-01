@@ -28,6 +28,5 @@ int main(int argc, char const *argv[])
         a[i] = a[i] * a[i];
         cout << a[i] << " ";
     }
-    
     return 0;
 }
