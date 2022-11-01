@@ -15,13 +15,11 @@ int main(int argc, char const *argv[])
     while(i<=n)
     {
         if (a[i] != a[i]+1 or a[i] == a[i+1])
-        {
             if (a[i] != a[i+1]-1 && a[i] != a[i+1])
             {
                 cout << a[i]+1 << " "; break;
             }
         i++;
-        }
     }
     return 0;
 }
