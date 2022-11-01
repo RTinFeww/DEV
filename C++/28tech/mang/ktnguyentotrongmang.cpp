@@ -28,5 +28,12 @@ int main()
             cout << a[i] << " ";
         }
     }
+    cout << endl;
+    //for each
+    for (int x : a)
+    {
+        cout << x << " ";
+    }
+    
     return 0;
 }
