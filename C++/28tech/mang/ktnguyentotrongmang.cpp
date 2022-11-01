@@ -12,7 +12,7 @@ bool nt(int n)
     return n>1;
 }
 
-int main(int argc, char const *argv[])
+int main()
 {
     int n;
     cin >> n;
