@@ -1,15 +1,3 @@
-#include <iostream>
-#include <algorithm>
-using namespace std;
-
-int gcd(int a, int b)
-{
-    if (b==0)
-        return a;
-    return gcd(b, a%b);
-}
-const int maxn = 1000;
-int a[maxn];
 int main(int argc, char const *argv[])
 {
     int t; cin >> t;
