@@ -22,6 +22,7 @@ int main(int argc, char const *argv[])
     {
         cin >> a[i];
     }
+    
     int k, x;
     cin >> k >> x;
     for (int i = n; i >= k+1; i--)
