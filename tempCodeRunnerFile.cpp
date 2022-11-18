@@ -24,7 +24,7 @@ int main(int argc, char const *argv[])
     cin.tie(nullptr);
     clock_t start, end;
     start = clock();
-    for (int i = 0; i < 1000; cout << i++ << endl)
+    for (int i = 0; i < 100000; cout << i++ << endl)
     {
         /* code */
     }
