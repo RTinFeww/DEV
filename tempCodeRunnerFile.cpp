@@ -1,30 +1,14 @@
 #include <iostream>
-#include <algorithm>
+#include <ctime>
 using namespace std;
-
-void xuat(int n, char a, char c)
-{
-    cout << n << " " << a << " " << c << endl;
-}
-
-void chuyendia(int n, char a, char b, char c)
-{
-    for (int i = 0; i < n; ++i)
-    {
-        chuyendia(n-1, a, c, b);
-        chuyendia(n-1, b, a, c);
-        xuat(n, a, c);
-        break;
-    }
-}
 
 int main(int argc, char const *argv[])
 {
-    int n; cin >> n;
-    char a, b, c;
-    a = 'A';
-    b = 'B';
-    c = 'C';
-    chuyendia(n, a, b, c);
+    clock_t start, end;
+    start = clock();
+    for (int i = 0; i < 100000; cout << i++ << endl)
+    end = clock();
+    double time_taken = double(end - start)/double(CLOCKS_PER_SEC);
+    cout << "Time used: " << time_taken << "s";
     return 0;
 }
