@@ -26,4 +26,3 @@ int main(int argc, char const *argv[])
     cout << endl << "Execution time: " << chrono::duration<double>(end-start).count() << "s" << endl;
     return 0;
 }
-    
