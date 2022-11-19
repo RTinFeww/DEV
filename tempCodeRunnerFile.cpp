@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <chrono>
 #include <ctime>
 #include <cstring>
 #include <cmath>
@@ -22,14 +23,18 @@ int main(int argc, char const *argv[])
     #endif
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    clock_t start, end;
-    start = clock();
-    for (int i = 0; i < 100000; cout << i++ << endl)
+    clock_t starts, ends;
+    starts = clock();
+    auto start = chrono::steady_clock::now();
+    for (int i = 0; i < 10000; cout << i++ << endl)
     {
         /* code */
     }
-    end = clock();
-    double time_taken = double(end - start)/double(CLOCKS_PER_SEC);
+    ends = clock();
+    double time_taken = double(ends - starts)/double(CLOCKS_PER_SEC);
     cout << "Time used: " << time_taken << "s";
+    auto end = chrono::steady_clock::now();
+    auto diff = end - start;
+    cout << chrono::duration<double>(diff).count() << " s" << endl;
     return 0;
 }
