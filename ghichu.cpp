@@ -23,10 +23,9 @@ int main(int argc, char const *argv[])
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     auto start = chrono::steady_clock::now();
-    // code
+    //code
     auto end = chrono::steady_clock::now();
-    auto diff = end - start;
-    cout << "Time used: " << chrono::duration<double>(diff).count() << "s" << endl;
+    cout << endl << "Execution time: " << chrono::duration<double>(end-start).count() << "s" << endl;
     return 0;
 }
     
