@@ -16,14 +16,14 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
+    auto start = chrono::steady_clock::now();
     #ifndef RTinFew
-    freopen("D:\\DEV\\nhap.in","r",stdin);
-    freopen("D:\\DEV\\xuat.out","w",stdout);
+    freopen("nhap.in","r",stdin);
+    freopen("xuat.out","w",stdout);
     #endif
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    auto start = chrono::steady_clock::now();
-    //code
+        /* code */
     auto end = chrono::steady_clock::now();
     cout << endl << "Execution time: " << chrono::duration<double>(end-start).count() << "s" << endl;
     return 0;
