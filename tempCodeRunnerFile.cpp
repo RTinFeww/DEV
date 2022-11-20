@@ -5,8 +5,8 @@ using namespace std;
 int main()
 {
     #ifndef RTinFew
-    freopen("nhap.in","r",stdin);
-    freopen("xuat.out","w",stdout);
+    freopen("nhap.in", "r", stdin);
+    freopen("xuat.out", "w", stdout);
     #endif
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
