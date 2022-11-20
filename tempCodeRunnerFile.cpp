@@ -1,14 +1,20 @@
 #include <bits/stdc++.h>
+#include <chrono>
 #define RTinFew
 using namespace std;
 
-int main(int argc, char const *argv[])
+int main()
 {
     #ifndef RTinFew
-    freopen("D:\\DEV\\nhap.in","r",stdin);
-    freopen("D:\\DEV\\xuat.out","w",stdout);
+    freopen("nhap.in","r",stdin);
+    freopen("xuat.out","w",stdout);
     #endif
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    return 0;
+	auto start = chrono::high_resolution_clock::now();
+	//code
+	auto end = chrono::high_resolution_clock::now();
+	double time_taken = chrono::duration_cast<chrono::nanoseconds>(end - start).count()*1e-9;
+	cout << "Time taken by program is : " << time_taken << " sec" << endl;
+	return 0;
 }
