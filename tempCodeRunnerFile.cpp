@@ -11,7 +11,11 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 	auto start = chrono::high_resolution_clock::now();
-	//code
+	for (int i = 0; i < 10000; i++)
+    {
+        cout << i << endl;
+    }
+    
 	auto end = chrono::high_resolution_clock::now();
 	double time_taken = chrono::duration_cast<chrono::nanoseconds>(end - start).count()*1e-9;
 	cout << "Time taken by program is : " << time_taken << " sec" << endl;
