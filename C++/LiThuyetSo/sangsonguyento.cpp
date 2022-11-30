@@ -1,5 +1,4 @@
-#include <iostream>
-#include <cmath>
+#include <bits/stdc++.h>
 #define RTinFew
 using namespace std;
 
@@ -19,17 +18,11 @@ void sang(){
 
 int main()
 {
-    #ifndef RTinFew
-    freopen("D:\\DEV\\nhap.in", "r", stdin);
-    freopen("D:\\DEV\\xuat.out", "w", stdout);
-    #endif
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     sang();
     int n; cin >> n;
     for (int i = 2; i <= n; ++i)
-    {
         if (nt[i]) cout << i << " ";
-    }
     return 0;
 }

@@ -14,8 +14,6 @@ int main(int argc, char const *argv[])
     cin.tie(nullptr);
     int n; cin >> n;
     for (int i = 2; i <= n; ++i)
-    {
         if (checknt(i)) cout << i << " ";
-    }
     return 0;
 }
