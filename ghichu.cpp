@@ -17,3 +17,4 @@ int main()
 	cout << "Time taken by program is : " << time_taken << " sec" << endl;
 	return 0;
 }
+//git add . && git commit -a -m "Code" && git push
