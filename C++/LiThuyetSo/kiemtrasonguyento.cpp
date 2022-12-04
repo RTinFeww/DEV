@@ -13,7 +13,8 @@ int main()
         		check = false;
         		break;
         	}
-        	else check = true;
+        	else 
+				check = true;
         }
         if (check == true) cout << i << " ";
 	}
