@@ -51,6 +51,7 @@ int main()
     for (int i = 0; i < m; i++)
     {
         int x, y; cin >> x >> y;
+        for
         adj[x].push_back(y);
         adj[y].push_back(x);
     }
@@ -59,4 +60,5 @@ int main()
 	double time_taken = chrono::duration_cast<chrono::nanoseconds>(end - start).count()*1e-9;
 	cout << "Time taken by program is: " << time_taken << " sec" << endl;
 	return 0;
+    
 }
