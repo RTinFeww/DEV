@@ -20,6 +20,8 @@ void sieve() {
 }
 
 int main(){
+	//freopen("NHAP.INP","r",stdin);
+    //freopen("XUAT.OUT","w",stdout);
     ios::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
     int n; cin >> n;
