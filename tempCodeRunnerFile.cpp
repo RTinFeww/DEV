@@ -9,5 +9,6 @@ int main(){
     //freopen("XUAT.OUT","w",stdout);
     ios::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
+    
 	return 0;
 }
